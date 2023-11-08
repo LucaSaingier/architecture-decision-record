@@ -1,9 +1,7 @@
-# Decision record template for business case
-
-This ADR template emphasizes creating a business case for a decision, including critera, candidates, and costs.
+# Architecture Decision Record
 
 
-## Top-level
+## Summary
 
 * Title
 * Status
@@ -17,121 +15,112 @@ This ADR template emphasizes creating a business case for a decision, including 
 * Recommendation
 
 
-## Low-level deep dive
+## ADR
 
-**Title**:
+**Titre**:
 
-  * A short present tense imperative phrase, less than 50 characters, like a git commit message.
+  * Choix du matériel utilisé dans le cadre du projet de passerelle V2I exploitant le BLE MESH.
 
 **Status**:
 
-  * One of proposed, accepted, rejected, deprecated, superseded, etc.
+  * Accepté.
 
-**Evaluation criteria**:
+**Critères d'Évaluation**:
 
-  * Summary: explain briefly what we seek to discover and why.
-
-  * Specifics
+  * Résumé: Nous cherchons à déterminer le meilleure choix matériel pour notre projet. Nous avons étudié plusieurs propositions dont l'Arduino, la nRF52, la Raspberry Pi et l'ESP32. Les critères d'évaluation incluent la familiarité avec le système d'exploitation, la performance, la stabilité, les langages utilisé, la documentation existante en ligne et entres autres, la prise en charge du BLE.
+    
+  * Spécificités Principales à prendre en compte:
+    * Familiarité avec le système d'exploitation
+    * Intégration du BLE MESH
+    * Stabilité
+    * Coût
 
 **Candidates to consider**:
 
-  * Summary: explain briefly how we discovered candidates, and draw attention to any outliers.
-
+  * Résumé: Après avoir effectué des recherches sur le matériel disponible, nous avons retenus deux candidats principaux pour la plateforme matérielle : Raspberry Pi et ESP32.
+    
   * List all candidates and related options; what are we evaluating as potential solutions?
 
-  * Specifics
+  * Modèles:
+    * ESP32-WROOM-32
+    * Raspberry Pi Zero W   
 
-**Research and analysis of each candidate**:
+**Recherche et Analyse de chaque Candidat**:
 
-  * Summary: explain briefly the research methods, and draw attention to patterns, clusters, and outliers.
+  **ESP32**
 
-  * Does/doesn't meet criteria and why
+   * Résumé:
+ 
+   * Correspondance aux critères
+ 
+     * 
+ 
+   * Analyse du Coût
+ 
+     * 
+ 
+     * Examples
+ 
+       * Licensing, such as contract agreements and legal commitments
+ 
+       * Training, such as upskilling and change management
+ 
+       * Operating, such as support and maintenance
+ 
+       * Metering, such as bandwidth and CPU usage
+ 
+   * Analyse SWOT
+ 
+     * Forces:
+ 
+     * Faiblesses
+ 
+     * Opportunités
+ 
+     * Menaces
+ 
+   * Opinions et Retours Internes
+ 
+     *  h
+    
+  **Raspberry Pi**
 
-    * Summary
+   * Résumé:
+ 
+   * Correspondance aux critères
+ 
+     * 
+ 
+   * Analyse du Coût
+ 
+     * 
+ 
+     * Examples
+ 
+       * Licensing, such as contract agreements and legal commitments
+ 
+       * Training, such as upskilling and change management
+ 
+       * Operating, such as support and maintenance
+ 
+       * Metering, such as bandwidth and CPU usage
+ 
+   * Analyse SWOT
+ 
+     * Forces:
+ 
+     * Faiblesses
+ 
+     * Opportunités
+ 
+     * Menaces
+ 
+   * Opinions et Retours Internes
+ 
+     * h
+ 
 
-    * Specifics
+**Décision**:
 
-  * Cost analysis
-
-    * Summary
-
-    * Examples
-
-      * Licensing, such as contract agreements and legal commitments
-
-      * Training, such as upskilling and change management
-
-      * Operating, such as support and maintenance
-
-      * Metering, such as bandwidth and CPU usage
-
-  * SWOT analysis
-
-    * Summary
-
-    * Strengths
-
-    * Weaknesses
-
-    * Opportunites
-
-    * Threats
-
-  * Internal opinions and feedback
-
-    * Summary
-
-    * Examples
-
-      * By the team, ideally written by the actual person
-
-      * From other stakeholders
-
-      * Quality attributes a.k.a. cross-functional requirements 
-
-  * External opinions and feedback
-
-    * Summary
-
-    * Who is providing the opinion?
-
-    * What are other candidates you considered?
-
-    * What are you creating? 
-
-      * Examples
-
-        * B2B or B2C
-
-        * external-facing or employee-only
-
-        * desktop or mobile
-
-        * pilot or production
-
-        * monolith or microservices
-
-    * How did you evaluate the candidates?
-
-    * Why did you choose the winner?
-
-    * What is happening since then?
-
-      * Examples
-
-        * How is the winner performing?
-
-        * What % of real-world production user traffic is flowing through the winner?
-
-        * What kinds of integrations are involved, such as with continuous delivery pipelines, content management systems, analytics and metrics, etc.?
-
-        * Knowing what you know now, what would you advise people to do differently?
-
-  * Anecdotes
-
-**Recommendation**:
-
-  * Summary
-
-  * Specifics
+  * h
 
